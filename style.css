@@ -1,0 +1,46 @@
+body {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(140, 189, 146);
+
+}
+.search{
+    --padding: 17px;
+
+    width: max-content;
+    display: flex;
+    align-items: center;
+    padding: var(--padding);
+    border-radius: 28px;
+    background: #f6f6f6;
+    transition: box-shadow 0.25s;
+}
+/*border na black sa search*/
+.search:focus-within{
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.75);
+}
+.search-input{
+    font-size: 16px;
+    margin-left: var(--padding);
+    outline: none;
+    border: none;
+    background: transparent;
+    width: 600px;
+}
+/* edit yung button na fix sa html*/
+.search-input::-webkit-search-cancel-button {
+    -webkit-appearance: none;
+    display: none;
+}
+.user {
+    position: absolute; 
+    top: 30px; 
+    right: 60px; 
+}
+.image-container {
+    width: 100px;
+
+}
+.adjust-image{
+
+}
